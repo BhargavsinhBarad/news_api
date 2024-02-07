@@ -1,9 +1,20 @@
-import 'package:api/views/home%20page.dart';
+import 'package:api/modules/views/detail/views/detail.dart';
+import 'package:api/modules/views/home/views/home%20page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    home: home(),
+    getPages: [
+      GetPage(
+        name: '/',
+        page: () => home(),
+      ),
+      GetPage(
+        name: "/detail",
+        page: () => detail(),
+      ),
+    ],
   ));
 }

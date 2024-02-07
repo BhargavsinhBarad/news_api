@@ -1,12 +1,12 @@
 class api_model {
   Map source;
-  var author;
-  String title;
-  String description;
-  String url;
-  var urlToImage;
-  String publishedAt;
-  String content;
+  dynamic author;
+  dynamic title;
+  dynamic description;
+  dynamic url;
+  dynamic urlToImage;
+  dynamic publishedAt;
+  dynamic content;
 
   api_model(
       {required this.source,

@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-import '../model/api_model.dart';
+import '../api_model.dart';
 
 class apihelper {
   apihelper._();
